@@ -69,7 +69,7 @@ function roadMove() {
 // функция движения машины игрока, обработка событий сенсорного экрана и мыши
 function carMove() {
     if (mouse.isDown('LEFT') || touch.isDown()) {
-        let pos = mouse.getPosition();
+        let pos = touch.getPosition();
         if (pos.x > width / 2) {
             car.moveTime(p(width / 1.5, car.y), 3);
             //car.setPosition(p(width / 1.5, car.y), speed, 0);
